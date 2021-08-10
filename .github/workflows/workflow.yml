@@ -24,7 +24,7 @@ jobs:
       - uses: actions/cache@v2
         id: yarn-cache
         with:
-          path: "**/node_modules"
+          path: '**/node_modules'
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
@@ -44,7 +44,6 @@ jobs:
           retention-days: 1
 
   check_artifacts:
-    if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     needs: build
     outputs:
@@ -58,3 +57,23 @@ jobs:
         uses: andstor/file-existence-action@v1
         with:
           files: warthog
+
+  deploy_warthog:
+    if: needs.check_artifacts.outputs.warthog-exists == 'true'
+    runs-on: ubuntu-latest
+    needs: check_artifacts
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: warthog
+          path: apps/warthog/dist
+
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: 'mld-warthog'
+          heroku_email: 'mathieulegrasdev@gmail.com'
+          appdir: 'apps/warthog'
