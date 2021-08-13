@@ -30,8 +30,11 @@
     ]
   },
   "projects": {
+    "react-spotify-api": {
+      "tags": ["react", "lib", "web", "api"]
+    },
     "warthog": {
-      "tags": []
+      "tags": ["react", "app", "web"]
     }
   }
 }
