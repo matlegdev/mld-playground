@@ -1,6 +1,27 @@
 {
   "version": 2,
   "projects": {
+    "react-chakra-ui": {
+      "root": "libs/react-chakra-ui",
+      "sourceRoot": "libs/react-chakra-ui/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/react-chakra-ui/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/react-chakra-ui"],
+          "options": {
+            "jestConfig": "libs/react-chakra-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "react-spotify-api": {
       "root": "libs/react-spotify-api",
       "sourceRoot": "libs/react-spotify-api/src",

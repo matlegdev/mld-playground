@@ -30,6 +30,9 @@
     ]
   },
   "projects": {
+    "react-chakra-ui": {
+      "tags": ["react", "web", "ui"]
+    },
     "react-spotify-api": {
       "tags": ["react", "lib", "web", "api"]
     },
