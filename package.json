@@ -47,6 +47,9 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-angular": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@nrwl/cli": "12.6.5",
     "@nrwl/cypress": "12.6.5",
     "@nrwl/eslint-plugin-nx": "12.6.5",
