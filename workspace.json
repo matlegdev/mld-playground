@@ -116,6 +116,27 @@
         }
       }
     },
+    "warthog-my-top-tracks-feature": {
+      "root": "libs/warthog/my-top-tracks/feature",
+      "sourceRoot": "libs/warthog/my-top-tracks/feature/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/warthog/my-top-tracks/feature/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/warthog/my-top-tracks/feature"],
+          "options": {
+            "jestConfig": "libs/warthog/my-top-tracks/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "warthog-my-top-tracks-ui": {
       "root": "libs/warthog/my-top-tracks/ui",
       "sourceRoot": "libs/warthog/my-top-tracks/ui/src",
