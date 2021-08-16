@@ -39,6 +39,9 @@
     "warthog": {
       "tags": ["react", "app", "web"]
     },
+    "warthog-my-top-tracks-feature": {
+      "tags": ["react", "web", "feature", "warthog"]
+    },
     "warthog-my-top-tracks-ui": {
       "tags": ["react", "web", "ui", "warthog"]
     },
