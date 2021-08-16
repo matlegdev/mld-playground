@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@mld/react-chakra-ui": ["libs/react-chakra-ui/src/index.ts"],
-      "@mld/react-spotify-api": ["libs/react-spotify-api/src/index.ts"]
+      "@mld/react-spotify-api": ["libs/react-spotify-api/src/index.ts"],
+      "@mld/warthog/shell/ui": ["libs/warthog/shell/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

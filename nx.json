@@ -38,6 +38,9 @@
     },
     "warthog": {
       "tags": ["react", "app", "web"]
+    },
+    "warthog-shell-ui": {
+      "tags": ["react", "web", "ui", "warthog"]
     }
   }
 }
