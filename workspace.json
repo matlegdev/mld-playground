@@ -158,6 +158,27 @@
         }
       }
     },
+    "warthog-shared-ui": {
+      "root": "libs/warthog/shared/ui",
+      "sourceRoot": "libs/warthog/shared/ui/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/warthog/shared/ui/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/warthog/shared/ui"],
+          "options": {
+            "jestConfig": "libs/warthog/shared/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "warthog-shell-ui": {
       "root": "libs/warthog/shell/ui",
       "sourceRoot": "libs/warthog/shell/ui/src",
