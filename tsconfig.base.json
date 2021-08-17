@@ -19,6 +19,7 @@
       "@mld/react-spotify-api": ["libs/react-spotify-api/src/index.ts"],
       "@mld/warthog/my-top-tracks/feature": ["libs/warthog/my-top-tracks/feature/src/index.ts"],
       "@mld/warthog/my-top-tracks/ui": ["libs/warthog/my-top-tracks/ui/src/index.ts"],
+      "@mld/warthog/shared/ui": ["libs/warthog/shared/ui/src/index.ts"],
       "@mld/warthog/shell/ui": ["libs/warthog/shell/ui/src/index.ts"]
     }
   },

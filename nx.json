@@ -45,6 +45,9 @@
     "warthog-my-top-tracks-ui": {
       "tags": ["react", "web", "ui", "warthog"]
     },
+    "warthog-shared-ui": {
+      "tags": ["react", "web", "ui", "warthog"]
+    },
     "warthog-shell-ui": {
       "tags": ["react", "web", "ui", "warthog"]
     }
